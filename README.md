@@ -1,6 +1,6 @@
 # Observatory — Gong Chen
 
-A small, interactive field for projects, research interests, notes, and possible lives.
+A connected personal wiki for research interests, reading notes, and related ideas.
 
 **Website:** [gcgloven.github.io](https://gcgloven.github.io/)
 
@@ -15,7 +15,7 @@ To update the site:
 1. Edit and preview the private authoring project.
 2. Run `npm ci`, `npm test`, then `SITE_URL=https://gcgloven.github.io BASE_PATH=/ npm run build` with Node.js 22.12.0 or newer.
 3. Review `dist/`. Keep drafts, the editor, and raw source out of the public output.
-4. Create `orbital-public-output.zip` from **the contents inside `dist/`**, including `.nojekyll`. `index.html` must be at the ZIP root, not inside a `dist` folder. Preserve nested folders and the bundled Three.js and Geist license files.
+4. Create `orbital-public-output.zip` from **the contents inside `dist/`**, including `.nojekyll`. `index.html` must be at the ZIP root, not inside a `dist` folder. Preserve nested folders and bundled license files, including the Geist font license.
 5. Replace the archive in this repository and commit to `main`. The deployment workflow runs automatically; it can also be started manually in **Actions**.
 
 Do not edit the generated website directly. Rebuild it from the private authoring project. Never upload the source-project ZIP or its Git history to this public repository.
